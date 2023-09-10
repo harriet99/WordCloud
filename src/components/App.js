@@ -1,23 +1,22 @@
 import React from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import AppShell from './AppShell';
+import Home from './Home';
+import Texts from './Texts';
+import Words from './Words';
 
 class App extends React.Component {
     render() {
         return (
-            // <Router>
-            //     <AppShell>
-            //         <div>
-            //             <Route exact path="/" component={Home}/>
-            //             <Route exact path="/texts" component={Texts}/>
-            //             <Route exact path="/words" component={Words}/>
-            //             <Route exact path="/detail/:textID" component={Detail}/>
-            //         </div>
-            //     </AppShell>
-            // </Router>
-            <div>
-                <h3>
-                    Hello World
-                </h3>
-            </div>
+            <Router>
+                <AppShell>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/texts" element={<Texts />} />
+                        <Route path="/words" element={<Words />} />
+                    </Routes>
+                </AppShell>
+            </Router>
         );
     }
 }
