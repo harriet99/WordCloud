@@ -1,0 +1,25 @@
+{
+  "name": "wordcloud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.3",
+    "babel-preset-react-app": "^10.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
