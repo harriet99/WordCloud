@@ -11,12 +11,21 @@ module.exports = {
         filename: '[name].js'
     },
     module: {
-        rules: [{
-            test: /\.js$/,
-            include: path.resolve(__dirname, './src'),
-            loader: 'babel-loader'
-        }]
-    },
+        rules: [
+            {
+                test: /\.js$/,
+                include: path.resolve(__dirname, './src'),
+                use: ['babel-loader']
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
+    },    
     plugins: [
         new CopyWebpackPlugin({
             patterns: [
