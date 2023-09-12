@@ -80,6 +80,13 @@ class Words extends React.Component {
         let nextState = {};
         nextState[e.target.name] = e.target.value;
         this.setState(nextState);
+        // limit weight to be from 1 to 9
+        if(e.target.value < 1) {
+            this.setState({weight: 1});
+        }
+        else if(e.target.value > 9) {
+            this.setState({weight: 9});
+        }
     }
     handleSubmit = () => {
         const word = {
