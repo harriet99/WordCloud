@@ -14,7 +14,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import TextField from '@material-ui/core/TextField';
 
 const databaseURL = "https://word-cloud-c8296-default-rtdb.firebaseio.com/";
-const apiURL = "http://localhost:5000";
+// const apiURL = "http://localhost:5000";
+const apiURL = "https://wordcloudserver-b674510f59de.herokuapp.com/";
 
 const styles = theme => ({
     fab: {
