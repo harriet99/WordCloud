@@ -1,6 +1,6 @@
 # WordCloud
 
-### Mobile app - Used React & Firebase
+### Web App - Used React & Firebase
 
 ### How to run the code locally:
 1. Clone the Client repository
